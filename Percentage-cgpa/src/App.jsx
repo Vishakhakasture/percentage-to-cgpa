@@ -1,5 +1,6 @@
 // App.jsx
 import React, { useState } from 'react';
+import "./App.css";
 
 function App() {
   const [cgpa, setCGPA] = useState('');
@@ -19,12 +20,12 @@ function App() {
 
   return (
     <div>
-      <h1>CGPA to Percentage and Percentage to CGPA Converter</h1>
-      <div>
+      <h1>CGPA to Percentage & Percentage to CGPA Converter</h1>
+      <div className="calculation">
         <label>Enter CGPA:</label>
         <input type="number" value={cgpa} onChange={handleCGPAChange} />
       </div>
-      <div>
+      <div className="calculation">
         <label>Enter Percentage:</label>
         <input type="number" value={percentage} onChange={handlePercentageChange} />
       </div>
